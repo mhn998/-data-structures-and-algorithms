@@ -33,6 +33,7 @@ Code-Challenge13 |[Includes , every , substring , charAt](./code-challenges/chal
 Description | Link
 ---------|--------
 Code-Challenge01 |[Reverse-Array](./python/code_challenges/array_reverse/array_reverse.py)
+Code-Challenge01 |[Shift-Array](./python/code_challenges/array_shift/array_shift.py)
 
 
 
@@ -44,9 +45,8 @@ Code-Challenge01 |[Reverse-Array](./python/code_challenges/array_reverse/array_r
 
 ---------------------------
 # Reverse an Array
-Reverse an array.
 
-## Challenge
+## Challenge Summary
 a function that reverse an array without using built-in method such as reverse()
 
 ## Approach & Efficiency
@@ -56,3 +56,19 @@ I took advantage of len() multiple times, for , while , append , insert.
 ![ReverseArray1](./python/assets/array-reverse1.jpg)
 ![ReverseArray2](./python/assets/array-reverse2.jpg)
 
+-----------------------
+
+# Array Shift
+
+## Challenge Summary
+Manipulate the array by specifically adding values to its middle
+
+## Challenge Description
+a function that takes an array of numbers and a value as an arguments , add that value to the middle of the array
+
+## Approach & Efficiency
+two approaches ,one depending on the length of the array if it's even or odd(longer solution) . second one that takes advantage of the ceiling of the half and slice the array into two parts between the value which sets in the middle.
+
+## Solution
+![Array-shift picture1](./python/assets/array_shift1.jpg)
+![Array-shift picture2](python/assets/array_shift2.jpg)
