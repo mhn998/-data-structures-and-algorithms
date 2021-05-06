@@ -56,6 +56,8 @@ I took advantage of len() multiple times, for , while , append , insert.
 ![ReverseArray1](./python/assets/array-reverse1.jpg)
 ![ReverseArray2](./python/assets/array-reverse2.jpg)
 
+
+
 -----------------------
 
 # Array Shift
@@ -72,3 +74,25 @@ two approaches ,one depending on the length of the array if it's even or odd(lon
 ## Solution
 ![Array-shift picture1](./python/assets/array_shift1.jpg)
 ![Array-shift picture2](python/assets/array_shift2.jpg)
+
+
+# Binary Search
+
+## Challenge Summary
+find the index of a value in a sorted array without using built in methods
+
+## Challenge Description
+a function that takes an array of numbers and a value as an arguments , find the index of that value in the array by calculating mid , figure out if the value equals, higher , less than the mid and go towards it , each time the mid is calculated the array is halved , and if the mid doesn't equal half if array add or subtract 1, keep iterating all they way  till finds it and returns it, else then the mid becomes 0 and return -1.
+
+## Approach & Efficiency
+described above.
+Efficiency : Checked with any other types than numbers , take all types of numbers , tested for each case (Happy path , expected failure , edge cases)
+
+## Solution
+![ReverseArray2](python/assets/array-binary-search.png)
+
+
+
+
+
+
