@@ -44,16 +44,16 @@ class Linked_list():
 
 # Write program here
 if __name__ == "__main__":
-  item = Node("Mugh")
-  linked = Linked_list()
-#   print(linked)
-  linked.head = item
-  print(item.data)
-#   print(linked.head)
-  print(linked.insert("john"))
-#   print(new_)
-  linked.insert("doe")
-#   linked.insert("Muhannad")
-#   print(linked.__str__())
-#   print(linked.includes("jack"))
-#   print(linked.includes("Muhannad"))
+#   item = Node("Mugh")
+#   linked = Linked_list()
+# #   print(linked)
+#   linked.head = item
+#   print(item.data)
+# #   print(linked.head)
+#   print(linked.insert("john"))
+# #   print(new_)
+#   linked.insert("doe")
+# #   linked.insert("Muhannad")
+# #   print(linked.__str__())
+# #   print(linked.includes("jack"))
+# #   print(linked.includes("Muhannad"))
