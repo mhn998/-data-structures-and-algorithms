@@ -92,7 +92,26 @@ Efficiency : Checked with any other types than numbers , take all types of numbe
 ![ReverseArray2](python/assets/array-binary-search.png)
 
 
+# Linked list
+
+# Challenge Summary
+Define a linked list class with two methods insert and includes.
+
+## Whiteboard Process
+N/A
+
+## Approach & Efficiency
+if else statement for the insert where if contains while loop , regarding includes it's an if statement inside a while loop.
 
 
 
+# Linked list insertion
 
+# Challenge Summary
+add new methods that insert nodes in different places in the linkedlist , append which is opposite of insert , insert after and insert before.
+
+## Whiteboard Process
+N/A
+
+## Approach & Efficiency
+insert before and insert have nearly the same concept of algorithm ,  which is loop over the linkedlist to search for that certain node then change the .next value for both the new node and the current node for inserting before or after , for inserting at the end it will loop over the end of the linkedlist then insert the node and change the .next for the current node.
