@@ -84,6 +84,26 @@ class Linked_list():
     #Define a method called toString (or __str__ in Python) which takes in no arguments and returns a string representing all the values in the Linked List, formatted as:
 # "{ a } -> { b } -> { c } -> NULL"2
 
+    def kthFromEnd(self,k):
+        try:
+            if k < 0:
+                raise Exception
+        except Exception:
+            return ("Invalid input with a negative value")
+        result=[]
+        current = self.head
+        if current == None:
+            return ("Linked list is empty")
+        while current:
+            result += [current.value]
+            current = current.next
+            if current == None:
+                break
+        try:
+            return result[::-1][k]
+        except IndexError:
+            return ("Out Of Range")
+
     def __str__(self):
         output = ""
         current = self.head
