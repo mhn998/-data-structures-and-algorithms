@@ -115,3 +115,17 @@ N/A
 
 ## Approach & Efficiency
 insert before and insert have nearly the same concept of algorithm ,  which is loop over the linkedlist to search for that certain node then change the .next value for both the new node and the current node for inserting before or after , for inserting at the end it will loop over the end of the linkedlist then insert the node and change the .next for the current node.
+
+
+# Linked list find a value from the end
+
+# Challenge Summary
+a function that finds a value from a linked list which start the index counting from the last node to the first
+
+## Whiteboard Process
+N/A
+
+## Approach & Efficiency
+convertig to normal list through looping over the linkedlist by assigning its values to a variable.
+
+

@@ -66,6 +66,37 @@ def test_linked_insert_after_last(list_test):
     list_test.insertAfter(2,4)
     assert str(list_test) == f' {{7}} ->  {{5}} ->  {{2}} ->  {{4}} -> Null'
 
+
+
+
+# Where k is greater than the length of the linked list
+
+def test_linked_greater_than_length(list_test):
+    assert list_test.kthFromEnd(9) == f'Out Of Range'
+
+# Where k and the length of the list are the same
+
+def test_linked_length_of_same(list_test):
+    assert list_test.kthFromEnd(3) == f'Out Of Range'
+
+# Where k is not a positive integer
+
+def test_linked_not_positive(list_test):
+    assert list_test.kthFromEnd(-3) == 'Invalid input with a negative value'
+
+# Where the linked list is of a size 1
+
+def test_linked_size_of_1(list_test2):
+    assert list_test2.kthFromEnd(0) == 'Linked list is empty'
+
+# “Happy Path” where k is not at the end, but somewhere in the middle of the linked list
+
+def test_linked_kthFromEnd_1(list_test):
+    assert list_test.kthFromEnd(2) == 7
+
+def test_linked_kthFromEnd_2(list_test):
+    assert list_test.kthFromEnd(0) == 2
+
 @pytest.fixture
 def list_test():
         linked=Linked_list()
@@ -74,6 +105,9 @@ def list_test():
         linked.insert(2)
         return linked
 
-
+@pytest.fixture
+def list_test2():
+        linked2=Linked_list()
+        return linked2
 
 
