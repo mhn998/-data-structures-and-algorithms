@@ -129,3 +129,21 @@ N/A
 convertig to normal list through looping over the linkedlist by assigning its values to a variable.
 
 
+
+# Linked list zip
+
+## Challenge Summary
+Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the head of the zipped list.
+
+## Challenge Description
+we should Chain two linkedlist by taking 1 value from each and link them together without creating new linkedlist
+
+## Approach & Efficiency
+looping till both ll hit none and appending item (described in details in white-board)
+space -> O(1)
+time -> O(2n)
+
+## Solution
+![Zip two linkedlists](python/assets/ll_zip.png)
+
+
