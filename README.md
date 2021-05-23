@@ -146,4 +146,13 @@ time -> O(2n)
 ## Solution
 ![Zip two linkedlists](python/assets/ll_zip.png)
 
+# Stack and Queues
 
+## Challenge Summary
+Create stack and queue with all its essential methods
+
+## Approach & Efficiency
+create a Node class that creates the node , then create a class for Stack with a top of None when instantiating , adds push , pop , isEmpty , peek and other methods to it , and the same for queue.
+
+## Whiteboard process
+N/A
