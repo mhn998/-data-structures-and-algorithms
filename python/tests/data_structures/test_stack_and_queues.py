@@ -57,28 +57,28 @@ def test_call_empty(test_stack):
 # Can successfully enqueue into a queue
 
 def test_enqueue(test_queue):
-    assert test_queue.front.value == 5
+    assert test_queue.rear.value == 5
     test_queue.enqueue(3)
-    assert test_queue.front.value == 3
+    assert test_queue.rear.value == 3
 
 # Can successfully enqueue multiple values into a queue
 
 def test_enqueue_multi(test_queue):
     test_queue.enqueue(3)
     test_queue.enqueue(1)
-    assert test_queue.front.value == 1
+    assert test_queue.rear.value == 1
 
 # Can successfully dequeue out of a queue the expected value
 
 def test_dequeue(test_queue):
-    assert test_queue.dequeue() == 5
+    assert test_queue.dequeue() == 9
     assert test_queue.front.value ==7
 
 # Can successfully peek into a queue, seeing the expected value
 
 def test_peek_q(test_queue):
-    assert test_queue.peek() == 5
-    assert test_queue.front.value == 5
+    assert test_queue.peek() == 9
+    assert test_queue.front.value == 9
 
 # Can successfully empty a queue after multiple dequeues
 
