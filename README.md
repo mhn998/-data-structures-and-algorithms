@@ -156,3 +156,19 @@ create a Node class that creates the node , then create a class for Stack with a
 
 ## Whiteboard process
 N/A
+
+
+
+# Stack with queues
+
+## Challenge Summary
+Create a queue that consists of two stacks
+
+## Approach & Efficiency
+Create a PseudoQueue class.this PseudoQueue class will implement our standard queue interface (the two methods listed below), but will internally only utilize 2 Stack objects.
+
+enqueue(value) which inserts value into the PseudoQueue, using a first-in, first-out approach.
+dequeue() which extracts a value from the PseudoQueue, using a first-in, first-out approach.
+
+## Whiteboard process
+N/A

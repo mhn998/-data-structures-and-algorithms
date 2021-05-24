@@ -47,23 +47,26 @@ class Stack:
     # Create a Queue class that has a front property. It creates an empty Queue when instantiated.
 class Queue:
     def __init__(self):
-        self.front = None  #This object should be aware of a default empty value assigned to front when the queue is created.
+        self.front = None
+        self.rear= None #This object should be aware of a default empty value assigned to front when the queue is created.
         # Define a method called enqueue which takes any value as an argument and adds a new node with that value to the back of the queue with an O(1) Time performance.
 
     def enqueue(self,value):
         new_node = Node(value)
-        new_node.next = self.front
-        self.front = new_node
+        if self.front is None:
+            self.front= new_node
+            self.rear = new_node
+        self.rear.next = new_node
+        self.rear = self.rear.next
 
-        # Define a method called dequeue that does not take any argument, removes the node from the front of the queue, and returns the node’s value. Should raise exception when called on empty queue
     def dequeue(self):
         try:
             if self.front is not None:
                 node = self.front
-                self.front = node.next
+                self.front = self.front.next
                 return node.value
             else:
-                raise Exception("Empty queue")
+                raise Exception("Empty Queue")
         except:
             return "Empty Queue"
 
