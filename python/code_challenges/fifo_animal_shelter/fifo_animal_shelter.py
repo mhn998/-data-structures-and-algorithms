@@ -13,7 +13,7 @@ class AnimalShelter:
         self.rear = self.rear.next
 
     def dequeue(self,kind=None):
-        if kind == None:
+        if kind is None:
             if self.front:
                 node = self.front
                 self.front = self.front.next
