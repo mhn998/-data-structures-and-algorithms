@@ -172,3 +172,35 @@ dequeue() which extracts a value from the PseudoQueue, using a first-in, first-o
 
 ## Whiteboard process
 N/A
+
+# Animal Shelter
+Create a class called AnimalShelter which contains only dogs and cats. The shelter operates using a first-in, first-out approach. And Data can be recognized if a Dog or Cat
+
+## Challenge Description
+Implement the following methods:
+- enqueue(animal): adds animal to the shelter.
+- animal can be either a dog or a cat object.
+- dequeue(pref): returns either a dog or a cat.
+- If pref is not "dog" or "cat" then return null.
+
+## Approach & Efficiency
+enqueue(animal) is just a normal enqueue that appends to the Queue , dequeue(pref) it will check for front if not none it will loop on current.next until it finds it
+
+## Solution
+- Problem domain : Create a class called AnimalShelter which contains only dogs and cats. The shelter operates using a first-in, first-out approach. And Data can be recognized if a Dog or Cat
+
+- Algorithim for dequeue
+1. check kind if none , if yes return the front
+2. if not none assign the front to a variable
+3. check front if it's equal to the value
+4. if not , check the next
+5. if not , assign current to next and check next
+6. when equals save to a variable
+7. assign the next for the current to the next after it
+8. return variable
+
+- pseudo code : n/a
+
+- Big O
+time: O(n)
+space : O(1)
