@@ -204,3 +204,31 @@ enqueue(animal) is just a normal enqueue that appends to the Queue , dequeue(pre
 - Big O
 time: O(n)
 space : O(1)
+
+# Multi-bracket Validation
+
+## Challenge Description
+a function should take a string as its only argument, and should return a boolean representing whether or not the brackets in the string are balanced. There are 3 types of brackets:
+
+Round Brackets : ()
+Square Brackets : []
+Curly Brackets : {}
+
+## Approach & Efficiency
+create your normal stack, then use your function to loop over the string and predict closing or opening and make decision based on it.
+
+## Solution
+![Multi bracket validation whiteboard](python/assets/multi-bracket.png)
+
+# Trees
+
+## Challenge Description
+- Create a BinaryTree class, define a method for each: preOrder , inOrder , postOrder
+- Create a BinarySearchTree class, define a method named add that adds a new node with value to tree. Define a method named contains that accepts a value, and returns a boolean indicating whether or not the value is in the tree at least once.
+
+# Approach & Efficiency
+- uses recursion in BinaryTree with big O(2^n)
+- uses recursion in BinarySearchTree with big O(2^n)
+
+#  Whiteboard process
+n/a
