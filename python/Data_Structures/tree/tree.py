@@ -48,6 +48,20 @@ class BinaryTree:
         _func(self.root)
         return output
 
+    def find_maximum_value(self):
+        self.max=self.root.value
+
+        def _func(node):
+            if node.value > self.max:
+                self.max =node.value
+            if node.left:
+                _func(node.left)
+            if node.right:
+                _func(node.right)
+
+        _func(self.root)
+        return self.max
+
 
 class BinarySearchTree(BinaryTree):
 
