@@ -30,6 +30,10 @@ def test_inOrder(test_tree_added):
 def test_postOrder(test_tree_added):
     assert test_tree_added.postOrder() == [0, 4, 7, 10, 8, 6]
 
+# Can successfully pick the maximum value in a tree
+def test_find_maximum_value_1(test_tree_added):
+    assert test_tree_added.find_maximum_value() == 10
+
 
 @pytest.fixture
 def test_tree_empty():

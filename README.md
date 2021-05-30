@@ -247,3 +247,20 @@ Add :
 2. check if it is equal and do comparison with the current and add to it if doesn't exist, else will navigate to the left or right
 
 Contains: Same as Add
+
+# Find Maximum Value in Binary Tree
+
+## Challenge Description
+Find the Maximum Value in a Binary Tree without using built ins methods.
+
+## Approach & Efficiency
+define a max attribute that is equal to the root ,  then iterate over the tree while comparing
+
+Big O of time --> O(2^n) Big O of space --> O(1)
+
+## API
+1. define a max attribute that is equal to the root
+2. use preOrder methods to iterate over tree Nodes values
+3. compare with the value saved in max then replace it if it is bigger
+4. after the recursion ends we will have the maximum value in the tree
+5. return it
