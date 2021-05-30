@@ -232,3 +232,18 @@ create your normal stack, then use your function to loop over the string and pre
 
 #  Whiteboard process
 n/a
+
+# API
+- preOrder,inOrder and postOrder:
+1. create an empty array
+2. It loops over the tree by going to the root
+3. append if preorder goes to the left node if existed and use recursion
+4. append if inorder then go to right if existed and uses recursion
+5. append if postorder
+
+- Add and contains
+Add :
+1. assigns root if it does not exist, else assigns current as root
+2. check if it is equal and do comparison with the current and add to it if doesn't exist, else will navigate to the left or right
+
+Contains: Same as Add
