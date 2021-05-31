@@ -4,6 +4,7 @@ class Node:
         self.value = value
         self.left = None
         self.right = None
+        self.next = None
 
 class BinaryTree:
     def __init__(self):
@@ -61,6 +62,27 @@ class BinaryTree:
 
         _func(self.root)
         return self.max
+
+    def breadth_first(self):
+        if self.root:
+            output=[]
+            q = Queue()
+            q.enqueue(self.root)
+
+            while q.front != None:
+                current = q.front.value
+
+                if current.left:
+                    q.enqueue(current.left)
+                if current.right:
+                    q.enqueue(current.right)
+
+                output.append(current.value)
+                q.dequeue()
+
+            return output
+        else:
+            return 'Empty Tree'
 
 
 class BinarySearchTree(BinaryTree):

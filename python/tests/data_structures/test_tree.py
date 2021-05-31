@@ -34,6 +34,15 @@ def test_postOrder(test_tree_added):
 def test_find_maximum_value_1(test_tree_added):
     assert test_tree_added.find_maximum_value() == 10
 
+# Can successfully traverse breadth-first
+
+def test_breadth_1(test_tree_added):
+    assert test_tree_added.breadth_first() == [6, 4, 8, 0, 7, 10]
+
+def test_breadth_2():
+    tree=BinarySearchTree()
+    assert tree.breadth_first() == 'Empty Tree'
+
 
 @pytest.fixture
 def test_tree_empty():
