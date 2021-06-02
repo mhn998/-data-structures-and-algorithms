@@ -1,10 +1,9 @@
 from Data_Structures.stacks_and_queues.stacks_and_queues import Queue
-class Node:
+class TNode:
     def __init__(self,value):
         self.value = value
         self.left = None
         self.right = None
-        self.next = None
 
 class BinaryTree:
     def __init__(self):
@@ -89,18 +88,18 @@ class BinarySearchTree(BinaryTree):
 
     def add(self, value):
         if not self.root:
-            self.root = Node(value)
+            self.root = TNode(value)
         else:
             def _func(node):
                 if value < node.value:
                     if not node.left:
-                        node.left = Node(value)
+                        node.left = TNode(value)
                         return
                     else:
                         _func(node.left)
                 else:
                     if not node.right:
-                        node.right = Node(value)
+                        node.right = TNode(value)
                         return
                     else:
                         _func(node.right)
