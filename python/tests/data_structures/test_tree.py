@@ -1,4 +1,4 @@
-from Data_Structures.tree.tree import Node,BinarySearchTree,BinaryTree
+from Data_Structures.tree.tree import BinarySearchTree,BinaryTree
 import pytest
 
 # Can successfully instantiate an empty tree
