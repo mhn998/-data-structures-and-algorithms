@@ -264,3 +264,20 @@ Big O of time --> O(2^n) Big O of space --> O(1)
 3. compare with the value saved in max then replace it if it is bigger
 4. after the recursion ends we will have the maximum value in the tree
 5. return it
+
+# Breadth-first
+
+## Challenge Description
+Write a breadth first traversal method which takes a Binary Tree as its unique input. Without utilizing any of the built-in methods available to your language, traverse the input tree using a Breadth-first approach, and return a list of the values in the tree in the order they were encountered.
+
+## Approach & Efficiency
+1. Create an empty list
+2. append tree node values when you dequeue the node you enqueued to the new queue we created
+
+- Big O
+time --> O(2^n)
+space --> O(n)
+
+## Whiteboard process
+![Breath-first](python/assets/breadth-first.png)
+
