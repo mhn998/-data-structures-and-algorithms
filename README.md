@@ -264,3 +264,21 @@ Big O of time --> O(2^n) Big O of space --> O(1)
 3. compare with the value saved in max then replace it if it is bigger
 4. after the recursion ends we will have the maximum value in the tree
 5. return it
+
+# FizzBuzz Tree
+
+## Challenge Description
+Write the fizzBuzz Tree function without using build in functions
+- takes a k-ary tree as an argument
+- If the value is divisible by 3, replace the value with “Fizz”
+- If the value is divisible by 5, replace the value with “Buzz”
+- If the value is divisible by 3 and 5, replace the value with “FizzBuzz”
+- If the value is not divisible by 3 or 5, simply turn the number into a String.
+
+## Approach & Efficiency
+copy the tree and used the depth method traversal while changing values of nodes
+
+Big O of time --> O(2^n) Big O of space --> O(n)
+
+# Whiteboard process
+![FizzBuzz Tree](python/assets/FizzBuzz_Tree.png)
