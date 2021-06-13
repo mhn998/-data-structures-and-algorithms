@@ -299,3 +299,18 @@ Big O of time --> O(2^n) Big O of space --> O(n)
 
 ## Whiteboard process
 ![FizzBuzz Tree](python/assets/FizzBuzz_Tree.png)
+
+
+# Insertion Sort
+
+## Challenge Description
+Trace the pseudo code that writes a function to sort an array without utilizing built in methods
+
+## Approach & Efficiency
+nested loops . outer loop , loop over the array length starting from 1 while the nested one is a while loop traverse the array each time the temp variable(value of i in arr) is less than the value of j in the array.
+
+- Big O of time --> O(2^n)
+- Big O of space --> O(1)
+
+## Whiteboard process
+![Insertion Sort](python/assets/insertion_sort.png)
