@@ -314,3 +314,18 @@ nested loops . outer loop , loop over the array length starting from 1 while the
 
 ## Whiteboard process
 ![Insertion Sort](python/assets/insertion_sort.png)
+
+
+# Merge Sort
+
+## Challenge Description
+Trace the pseudo code that writes Merge sort algorithm which works on the principle divide and conquer, Merge sort repeatedly breaks down a list into several sublists until each sublist consists of a single element and merging those sublists in a manner that results into a sorted list.
+
+## Approach & Efficiency
+Divide the input array from the mid into right and left ,keeps going repeatedly until each element is single to start comparing and merging single elements in the right order and reassign values again in order using recursion.
+
+- Big O of time --> O(n*log(n))
+- Big O of space --> O(1)
+
+## Whiteboard process
+![Merge Sort](python/assets/merge_sort.png)
