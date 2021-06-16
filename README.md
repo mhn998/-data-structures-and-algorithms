@@ -329,3 +329,18 @@ Divide the input array from the mid into right and left ,keeps going repeatedly 
 
 ## Whiteboard process
 ![Merge Sort](python/assets/merge_sort.png)
+
+
+# Merge Sort
+
+## Challenge Description
+Trace the pseudo code that writes quick sort algorithm that sorts an array without utilizing built in methods.
+
+## Approach & Efficiency
+choosing a 'pivot' element from the array and partitioning the other elements into two sub-arrays, according to whether they are less than or greater than the pivot. The sub-arrays are then sorted recursively.
+
+- Big O of time --> O(log(n))
+- Big O of space --> O(1)
+
+## Whiteboard process
+![Quick Sort](python/assets/quick_sort.png)
