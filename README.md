@@ -331,7 +331,7 @@ Divide the input array from the mid into right and left ,keeps going repeatedly 
 ![Merge Sort](python/assets/merge_sort.png)
 
 
-# Merge Sort
+# Quick Sort
 
 ## Challenge Description
 Trace the pseudo code that writes quick sort algorithm that sorts an array without utilizing built in methods.
@@ -344,3 +344,23 @@ choosing a 'pivot' element from the array and partitioning the other elements in
 
 ## Whiteboard process
 ![Quick Sort](python/assets/quick_sort.png)
+
+
+# Hash Tables
+Hashtables are a data structure that utilize key value pairs. This means every Node or Bucket has both a key, and a value.
+The basic idea of a hashtable is the ability to store the key into this data structure, and quickly retrieve the value. This is done through what we call a hash. A hash is the ability to encode the key that will eventually map to a specific location in the data structure that we can look at directly to retrieve the value.
+
+## Challenge Description
+Implement a Hashtable with the following methods hash,add,get,contains.
+
+## Approach & Efficiency
+create a list with 1024 None elements, whenever we add a value it will check if it's existed in the location, if there is not(none) it will create a linked list and insert to it, else it will add to the existing linked list.
+
+Big O of time --> O(1)
+Big O of space --> O(1)
+
+# API
+- hash method that is being used by other methods to know values' location.
+- add method that takes in the key & value , add them to their location.
+- get method that takes in the key, returns the value from the table.
+- contains method that takes in the key, returns a boolean if the key exists in the table.
