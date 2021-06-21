@@ -364,3 +364,18 @@ Big O of space --> O(1)
 - add method that takes in the key & value , add them to their location.
 - get method that takes in the key, returns the value from the table.
 - contains method that takes in the key, returns a boolean if the key exists in the table.
+
+
+# Repeated Word
+
+## Challenge Description
+Find the first repeated word in a book , paragraph or any text.
+
+## Approach & Efficiency
+using regex to generate array of words (findall), loop over it and check , if it's in the empty list , return it. else append to the empty list.
+
+- Big O of time --> O(n^2)
+- Big O of space --> O(n)
+
+ # Whiteboard process
+![repeated word](python/assets/repeated_word.png)
