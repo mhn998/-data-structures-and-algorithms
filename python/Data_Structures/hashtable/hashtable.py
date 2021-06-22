@@ -32,7 +32,7 @@ class Hashtable:
         self.size = size
         self._buckets = [None]*size
 
-    def hash(self,key):
+    def _hash(self,key):
         sum = 0
         for char in key:
             sum += ord(char)
@@ -40,7 +40,7 @@ class Hashtable:
         return hash_key
 
     def add(self,key,value):
-        index = self.hash(key)
+        index = self._hash(key)
         if self._buckets[index] is None:
             self._buckets[index] = LinkedList()
             self._buckets[index].insert(key,value)
@@ -49,7 +49,7 @@ class Hashtable:
 
 
     def get(self,key):
-        index = self.hash(key)
+        index = self._hash(key)
 
         if self._buckets[index] is None:
             return self._buckets[index]
@@ -61,7 +61,7 @@ class Hashtable:
                 current = current.next
 
     def contains(self,key):
-        index = self.hash(key)
+        index = self._hash(key)
         if self._buckets[index] != None:
 
             current = self._buckets[index].head
@@ -81,5 +81,5 @@ if __name__ == "__main__":
     print(hashtable.get("alrightee"))
     print(hashtable.get("why"))
     print(hashtable.contains("muhannad"))
-    print(hashtable.hash('delicious'))
+    print(hashtable._hash('delicious'))
 
