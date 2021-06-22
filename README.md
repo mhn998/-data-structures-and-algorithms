@@ -379,3 +379,19 @@ using regex to generate array of words (findall), loop over it and check , if it
 
  # Whiteboard process
 ![repeated word](python/assets/repeated_word.png)
+
+
+
+# Tree Intersection
+
+## Challenge Description
+Find common values between two binary trees
+
+## Approach & Efficiency
+using preorder method in each tree which traverse the tree and returns an array , save these two array ,define an empty array called common_values,  iterate over array 1 and check if it values is existing in array 2 , if yes append to the empty list, later check if length of the common_values array defined above is bigger than 0 , if yes return it , no , then return no common values
+
+- Big O of time --> O(n)
+- Big O of space --> O(n)
+
+ ## Whiteboard process
+- The approach above is self-explanatory as algorithm and Big O  , code is documented and straight-forward using proper function and variable's names and it's 4:00AM , isn't it? ---> [Tree intersection](python/code_challenges/tree_intersection/tree_intersection.py)
