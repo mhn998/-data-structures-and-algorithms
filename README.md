@@ -395,3 +395,27 @@ using preorder method in each tree which traverse the tree and returns an array 
 
  ## Whiteboard process
 - The approach above is self-explanatory as algorithm and Big O  , code is documented and straight-forward using proper function and variable's names and it's 4:00AM , isn't it? ---> [Tree intersection](python/code_challenges/tree_intersection/tree_intersection.py)
+
+
+# Left Join
+
+- LEFT JOIN returns all rows from the left table, even if there are no matches in the right table. This means that if the ON clause matches 0 (zero) records in the right table; the join will still return a row in the result, but with NULL in each column from the right table.
+- This means that a left join returns all the values from the left table, plus matched values from the right table or NULL in case of no matching join predicate.
+
+## Challenge Description
+Implement a simplified LEFT JOIN for 2 Hashmaps
+
+## Approach & Efficiency
+1. loop over the first hashmap and
+2. define an empty array, appends its key and values into an empty array ,
+3. then for every key (i[0] which is the key in the inner array)
+4. do a check if the other hashmap contains one of these keys ,
+5. if yes append the value for the inner array, if no append none
+6. return the array defined above in step 2.
+
+- Big O of time --> O(n^2)
+- Big O of space --> O(n)
+
+## Whiteboard process
+- The approach above is self-explanatory as algorithm and Big O  , code is documented and straight-forward using proper function and variable's names
+[Left join](python/code_challenges/left_join/left_join.py)
