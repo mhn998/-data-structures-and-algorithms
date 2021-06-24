@@ -39,6 +39,11 @@ class Hashtable:
         hash_key = (sum*29)%(self.size)
         return hash_key
 
+    def __iter__(self):
+        for i in self._buckets:
+            if i:
+                yield i
+
     def add(self,key,value):
         index = self._hash(key)
         if self._buckets[index] is None:
