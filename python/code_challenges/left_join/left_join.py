@@ -3,7 +3,7 @@ from Data_Structures.hashtable.hashtable import Hashtable
 def left_join(h_t1,h_t2):
     lst = []
     # loop over hashmap1
-    for i in h_t1._buckets:
+    for i in h_t1:
         if i is not None:
             current = i.head
             while current:
