@@ -419,3 +419,30 @@ Implement a simplified LEFT JOIN for 2 Hashmaps
 ## Whiteboard process
 - The approach above is self-explanatory as algorithm and Big O  , code is documented and straight-forward using proper function and variable's names
 [Left join](python/code_challenges/left_join/left_join.py)
+
+
+# Graphs
+- A graph is a non-linear data structure that can be looked at as a collection of vertices (or nodes) potentially connected by line segments named edges
+
+
+## Challenge Description
+- Implement your own Graph. The graph should be represented as an adjacency list
+
+## Approach & Efficiency
+Docs Strings are supplied with comments here ,  [Graph](python/Data_Structures/graph/graph.py)
+
+Big O of time --> O(n^2)
+Big O of space --> O(n)
+
+## API
+add_node(): Adds a new vertex(node) to the graph, Takes in the value of that vertex and Returns the added node
+
+add_edge(): Adds a new edge between two vertices in the graph along with weight if supplied(optional), Takes in the two nodes to be connected by the edge Both vertices should already be in the Graph to not throw key Error
+
+get_nodes(): Returns all of the vertices in the graph as a list
+
+get_neighbors(): Returns a collection of edges connected to the given vertex using get method for dictionary built in method, Takes in a given vertex along with the weight of the connection.
+
+size(): Returns the total number of vertices in the graph
+
+Breadth_first_search : Extra method which traverse the graph using bfs and call any function on it.
