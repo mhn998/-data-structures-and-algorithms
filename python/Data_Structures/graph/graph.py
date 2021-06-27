@@ -70,13 +70,14 @@ class Graph:
     def breadth_first_search(self,start_vertex,action=(lambda x:None)):
         queue = Queue()
         visited = set()
+        lst = []
 
         queue.enqueue(start_vertex)
         visited.add(start_vertex)
 
         while len(queue):
             current_vertex = queue.dequeue()
-            action(current_vertex)
+            lst.append(current_vertex.value)
             neighbors = self.get_neighbors(current_vertex)
 
             for edge in neighbors:
@@ -87,6 +88,13 @@ class Graph:
                 else:
                     visited.add(neighbor_vertex)
                 queue.enqueue(neighbor_vertex)
+
+        if start_vertex not in self._adjacency_list:
+            return "Start node does not exist"
+
+        if len(lst) == 0:
+            return "Empty Graph"
+        return lst
 
 
 if __name__ == '__main__':
