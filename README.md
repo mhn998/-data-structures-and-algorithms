@@ -471,3 +471,30 @@ Breadth_first_search :traverse the graph using bfs and call any function on it.
 
 ## Whiteboard process
 ![Graph breadth-first traversal](python/assets/graph-breadth-first-traversal.png)
+
+
+
+
+
+# Graphs Breath-first traversal
+- A breadth-traversal is kind of tree/graph traversing where you visit vertices level by level using queue.
+
+
+## Challenge Description
+- Implement graph-breadth-first traversal
+
+## Approach & Efficiency
+- Broken into two steps:
+1. step 1 for looping over the queue
+2. step 2 for looping over neighbors of the vertex and when it's not visited enqueue again
+[Graph included breadth-first traversal](python/Data_Structures/graph/graph.py)
+
+
+Big O of time --> O(n^2)
+Big O of space --> O(n)
+
+## API
+Breadth_first_search :traverse the graph using bfs and call any function on it.
+
+## Whiteboard process
+![Business trip graph](python/assets/business_trip_graph.png)
