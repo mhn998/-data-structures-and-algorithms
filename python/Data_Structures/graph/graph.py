@@ -1,4 +1,5 @@
 from collections import deque
+from Data_Structures.stacks_and_queues.stacks_and_queues import Stack
 
 class Vertex:
     def __init__(self,value):
@@ -23,9 +24,9 @@ class Queue():
     def __len__(self):
         return len(self.dq)
 
-class Stack():
-    def __init__(self):
-        pass
+# class Stack():
+#     def __init__(self):
+#         pass
 
 class Graph:
     def __init__(self):
@@ -97,9 +98,53 @@ class Graph:
         return lst
 
 
+    def depth_first_search(self, start_vertex):
+        verticies = []
+        visited = set()
+        stack = Stack()
+
+        stack.push(start_vertex)
+        visited.add(start_vertex.value)
+
+        while not stack.isEmpty():
+            current_vertex = stack.pop()
+            verticies.append(current_vertex.value)
+            neighbors = self.get_neighbors(current_vertex)
+
+            for neighbor in neighbors:
+                if not neighbor in visited :
+                    stack.push(neighbor.vertex)
+                    visited.add(neighbor.vertex.value)
+
+
+        if start_vertex not in self._adjacency_list:
+                return "Start node does not exist"
+
+        return visited
+
+
 if __name__ == '__main__':
     g = Graph()
     node1 = g.add_node('node1')
     node2 = g.add_node('node2')
     g.add_edge(node1,node2)
-    g.breadth_first_search(node1,lambda v :print(v.value))
+    print(g.breadth_first_search(node1))
+    g2 = Graph()
+    node_a= g2.add_node('A')
+    node_b= g2.add_node('B')
+    node_c= g2.add_node('C')
+    node_d= g2.add_node('D')
+    node_e= g2.add_node('E')
+    node_f= g2.add_node('F')
+    node_g= g2.add_node('G')
+    node_h= g2.add_node('H')
+    g2.add_edge(node_a,node_b)
+    g2.add_edge(node_a,node_d)
+    g2.add_edge(node_b,node_d)
+    g2.add_edge(node_b,node_c)
+    g2.add_edge(node_c,node_g)
+    g2.add_edge(node_d,node_f)
+    g2.add_edge(node_d,node_h)
+    g2.add_edge(node_f,node_h)
+    g2.add_edge(node_d,node_e)
+    print(g2.depth_first_search(node_a))
