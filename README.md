@@ -493,3 +493,30 @@ Big O of space --> O(n)
 
 ## Whiteboard process
 ![Business trip graph](python/assets/business_trip_graph.png)
+
+
+
+# Graphs depth-first traversal
+- A depth-traversal is kind of tree/graph traversing where you visit vertices all the way inside each level by going tto depth using preOrder, inOrder , can be implemented using a stack or recursion.
+
+
+## Challenge Description
+- Implement graph-depth-first traversal
+
+## Approach & Efficiency
+- Broken into two steps:
+1. step 1 for looping over the stack
+2. step 2 for looping over neighbors of the vertex and when it's not visited push again
+[Graph included depth-first traversal](python/Data_Structures/graph/graph.py)
+
+
+Big O of time --> O(n^2)
+Big O of space --> O(n)
+
+## API
+depth_first_search :traverse the graph using bfs which return all ordered values in a list.
+
+## Whiteboard process
+![Graph breadth-first traversal](python/assets/graph-breadth-first-traversal.png)
+
+
