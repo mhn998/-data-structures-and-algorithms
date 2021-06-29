@@ -471,3 +471,25 @@ Breadth_first_search :traverse the graph using bfs and call any function on it.
 
 ## Whiteboard process
 ![Graph breadth-first traversal](python/assets/graph-breadth-first-traversal.png)
+
+
+
+
+
+# Business Trip
+- find whether two cities are connected and reachable in a specific graph and if yes calculate total trip cost
+
+
+## Challenge Description
+- write a function that takes cities as array and a graph , check whether cities are connected and return boolean of true if yes and integer of total trip cost , false if no and 0.
+
+## Approach & Efficiency
+- get all vertices , loop over them and assign them into an empty dictionary , loop into cities and get neighbor of the first one , loop over the neighbors now to check if there's a path.
+[Graph Business Trip](python/code_challenges/graph_business_trip/graph_business_trip.py)
+
+
+Big O of time --> O(n^2)
+Big O of space --> O(n)
+
+## Whiteboard process
+![Business trip graph](python/assets/business_trip_graph.png)
