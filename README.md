@@ -476,25 +476,20 @@ Breadth_first_search :traverse the graph using bfs and call any function on it.
 
 
 
-# Graphs Breath-first traversal
-- A breadth-traversal is kind of tree/graph traversing where you visit vertices level by level using queue.
+# Business Trip
+- find whether two cities are connected and reachable in a specific graph and if yes calculate total trip cost
 
 
 ## Challenge Description
-- Implement graph-breadth-first traversal
+- write a function that takes cities as array and a graph , check whether cities are connected and return boolean of true if yes and integer of total trip cost , false if no and 0.
 
 ## Approach & Efficiency
-- Broken into two steps:
-1. step 1 for looping over the queue
-2. step 2 for looping over neighbors of the vertex and when it's not visited enqueue again
-[Graph included breadth-first traversal](python/Data_Structures/graph/graph.py)
+- get all vertices , loop over them and assign them into an empty dictionary , loop into cities and get neighbor of the first one , loop over the neighbors now to check if there's a path.
+[Graph Business Trip](python/code_challenges/graph_business_trip/graph_business_trip.py)
 
 
 Big O of time --> O(n^2)
 Big O of space --> O(n)
-
-## API
-Breadth_first_search :traverse the graph using bfs and call any function on it.
 
 ## Whiteboard process
 ![Business trip graph](python/assets/business_trip_graph.png)
